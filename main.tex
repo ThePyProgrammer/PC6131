@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+
+% basic packages
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{notes}
+\usepackage{lipsum}
+
+% page formatting
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{accents}
+
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\arabic{section}. #1}}}
+\renewcommand{\sectionmark}[1]{}
+\lhead{\textbf{\thepage} \ \ \nouppercase{\rightmark}}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\setlength{\headheight}{14pt}
+
+\linespread{1.03} % give a little extra room
+\setlength{\parindent}{0.2in} % reduce paragraph indent a bit
+\setcounter{secnumdepth}{2} % no numbered subsubsections
+\setcounter{tocdepth}{2} % no subsubsections in ToC
+
+\begin{document}
+
+% make title page
+\thispagestyle{empty}
+\bigskip \
+\vspace{0.1cm}
+
+\begin{center}
+{\fontsize{22}{22} \selectfont 'Lecture' Notes for}
+\vskip 16pt
+{\fontsize{36}{36} \selectfont \bf \sffamily PC6131}
+\vskip 24pt
+{\fontsize{18}{18} \selectfont \rmfamily Prannaya Gupta} 
+\vskip 6pt
+{\fontsize{14}{14} \selectfont \ttfamily M23604} 
+\vskip 24pt
+\end{center}
+
+% {\parindent0pt \baselineskip=15.5pt Heve fun reading this man.}
+
+% make table of contents
+% \newpage
+\microtoc
+\newpage
+
+% main content
+\section{Thermodynamics}
+\subsection{Lesson 1 (27 June 2023)}
+
+From Year 3, we know that the change in energy of a system is simply referred to as \textbf{work done}, and is determined via the following expression:
+$$\Delta U = W_\text{net} = W_\text{in} - W_\text{out} = \int \overrightarrow{F}_\text{net, on} \cdot d\vec{s}$$
+
+The integral, as reiterated several times, is simply the \textbf{area under the curve}. Hence, if I were to plot the curve of $\overrightarrow{F}_\text{net, on}$ against $\vec{s}$, I can determine this work done by just measuring the area underneath.
+
+When we tried dealing with friction, we used a term known as the \textit{coefficient of friction} (static or kinetic) to determine the force acting on the object, hence determining the work done by just finding the area under the curve. Friction is known as a \textbf{dissipative force}, which can only take away energy from the object. This means that an object cannot be granted energy magically via friction, all the energy is dissipated to the surrounding in the form of heat and sound.
+
+What this chapter aims to consider is what happens if you input heat, or take heat from a system. Inputting and taking heat is different from work done because there is no change in volume, the system is restrained from that. Instead, alternative methods are adopted to achieve this.
+
+Recall from Year 2 that the heat inputted into a system can be mapped via the following equation:
+$$Q = mc\Delta T = C\Delta T$$
+
+This equation represents the heat change of the object as the temperature changes.
+
+
+
+
+
+
+\end{document}
